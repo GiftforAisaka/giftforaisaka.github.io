@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thuanne Ganda — Transição para Tecnologia</title>
+<meta name="description" content="Portfólio de Thuanne Ganda, em transição de carreira para tecnologia.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ============================================================
+     CABEÇALHO + MENU
+============================================================ -->
+<header class="topo">
+  <div class="wrap topo-wrap">
+    <a href="#inicio" class="marca">Thuanne<span>.dev</span></a>
+
+    <nav class="menu"> <!--Menu interativo que faz a página "descer" até o conteúdo selecionado-->
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#trajetoria">Trajetória</a></li>
+        <li class="tem-dropdown">
+          <a href="#projetos">Projetos</a>
+          <ul class="dropdown">
+            <li><a href="https://github.com/GiftforAisaka" target="_blank" rel="noopener">Aprendendo JS</a></li>
+            <li><a href="#projetos" class="em-breve">Construindo o próximo projeto...</a></li>
+          </ul>
+        </li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button> <!--Paletas de cores selecionaveis do site-->
+
+    <div class="paletas" role="group" aria-label="Trocar paleta de cores">
+      <button class="paleta-dot" data-tema="sakura" style="--dot:#c2185b" title="Sakura" aria-label="Paleta Sakura"></button>
+      <button class="paleta-dot" data-tema="lavanda" style="--dot:#7c4c99" title="Lavanda" aria-label="Paleta Lavanda"></button>
+      <button class="paleta-dot" data-tema="noite" style="--dot:#bd93f9" title="Noite" aria-label="Paleta Noite"></button>
+      <button class="paleta-dot" data-tema="matcha" style="--dot:#3d6b52" title="Matcha" aria-label="Paleta Matcha"></button>
+      <button class="paleta-dot" data-tema="sunset" style="--dot:#d1495b" title="Pôr do sol" aria-label="Paleta Pôr do sol"></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO - primeiro bloco visível da página
+============================================================ -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-texto">
+      <p class="hero-kicker">Análise e Desenvolvimento de Sistemas · em transição de carreira</p>
+      <h1>Trocando o plantão<br><em>pelo terminal</em></h1>
+      <p class="hero-lede">
+        Cursando Análise e Desenvolvimento de Sistemas, atualmente estudando primeiros passos em HTML, CSS, JavaScript e lógica de programação pela Alura. Apaixonada pelo aprendizado autônomo através de influencers de tecnologia e cursos extracuriculares, buscando sempre me atualizar. Entusiasta do uso da IA no dia dia, não de forma substitutiva, mas sim como ferramenta auxiliar de projetos e processos criativos, analisando cada etapa de forma crítica e atenciosa.
+      </p>
+      <div class="hero-acoes">
+        <a href="#projetos" class="botao botao-principal">Ver projetos</a>
+        <a href="#contato" class="botao botao-fantasma">Falar comigo</a>
+      </div>
+    </div>
+
+    <div class="hero-sinal" aria-hidden="true"> <!--Linha animada com a tag html-->
+      <svg viewBox="0 0 420 160" xmlns="http://www.w3.org/2000/svg">
+        <path class="onda" d="M0,80 L60,80 Q80,60 100,80 L130,80 L142,95 L160,45 L178,115 L192,80 L240,80 Q270,55 300,80 L390,80"
+              fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="colch" d="M320,55 L295,80 L320,105" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="colch" d="M370,55 L395,80 L370,105" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="colch" d="M345,112 L358,48" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOBRE
+============================================================ -->
+<section class="secao" id="sobre">
+  <div class="wrap sobre-grid">
+    <div>
+      <h2>Sobre</h2>
+      <p>
+        Três anos na rotina hospitalar me deram a capacidade de tomar decisões de forma rápida e consciente. 
+        Sou uma ótima comunicadora, sempre buscando passar informações de forma clara e adaptada a todos os públicos.
+        Capacidade de cumprir protocolos de forma inteligente e cuidadosa — hoje a serviço de uma nova área. Estou
+        construindo minha base técnica em HTML, CSS, JavaScript e lógica de programação,
+        cursando Análise e Desenvolvimento de Sistemas, com a mesma disciplina da minha primeira graduação.
+      </p>
+    </div>
+    <div class="ia-card">
+      <h3>Como uso IA no meu aprendizado</h3>
+      <p>
+        Entusiasta do uso consciente de IA — não como substituta do raciocínio, mas como
+        ferramenta auxiliar de estudo. Introduzi o uso do Claude, ChatGPT e Gemini em minha rotina pra entender
+        o funcionamento de cada estrutura e linguagem, de forma alinhada aos estudos da graduação e 
+        cursos extracuriculares. Entendo a importância da IA como ferramenta auxiliar de mecanismos complexos
+        e como guia na construção dos projetos que gosto de criar. Mantenho meu próprio material de estudo atualizado com o que aprendo — sempre
+        analisando cada resposta de forma crítica antes de aplicar. 
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+============================================================ -->
+<section class="secao secao-alt" id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Em consolidação</h3>
+        <div class="tags">
+          <span>Lógica de Programação</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Git &amp; GitHub</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Base sólida</h3>
+        <div class="tags">
+          <span>Comunicação com públicos diversos</span>
+          <span>Trabalho sob pressão</span>
+          <span>Protocolos rigorosos</span>
+          <span>Organização de eventos</span>
+          <span>Criação de conteúdo</span>
+          <span>Treinamento de novas contratações</span>
+        </div>
+      </div>
+      <div class="skill-card skill-card-ia">
+        <h3>IA generativa</h3>
+        <div class="tags">
+          <span>Claude</span>
+          <span>ChatGPT</span>
+          <span>Gemini</span>
+          <span>Uso crítico &amp; e consciente</span>
+          <span>Implementação de projetos autorais</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRAJETÓRIA
+============================================================ -->
+<section class="secao" id="trajetoria">
+  <div class="wrap">
+    <h2>Trajetória - Como tudo começou?</h2>
+    <ol class="linha-tempo">
+      <li>
+        <span class="lt-data">2019 — 2021</span>
+        <h3>Grupo de Estudos de Pequenos Animais (GEPA)</h3>
+        <p>Organização de simpósios, módulos e criação de conteúdo educativo.</p>
+      </li>
+      <li>
+        <span class="lt-data">2022</span>
+        <h3>Iniciação científica · Financiamento Santander</h3>
+        <p>"Utilização do plasma rico em plaquetas no estímulo cicatricial: revisão de literatura."</p>
+      </li>
+      <li>
+        <span class="lt-data">2023</span>
+        <h3>Bacharelado em Medicina Veterinária — UNIP</h3>
+        <p>Plantonista em clínica noturna, urgência e emergência com autonomia.</p>
+      </li>
+      <li>
+        <span class="lt-data">2024 — 2026</span>
+        <h3>Aprimoramento em Medicina Veterinária de Pequenos Animais</h3>
+        <p>Hospital Veterinário Guerreiro — clínica médica e internação semi-intensiva.</p>
+      </li>
+      <li>
+        <span class="lt-data">2026 —</span>
+        <h3>Início da transição para tecnologia</h3>
+        <p>ADS na Uninove + primeiros passos em lógica, HTML, CSS e JavaScript pela Alura.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJETOS
+============================================================ -->
+<section class="secao secao-alt" id="projetos">
+  <div class="wrap">
+    <h2>Projetos</h2>
+    <div class="projetos-grid">
+      <article class="projeto-card">
+        <span class="projeto-status">em construção</span>
+        <h3>Exercícios de JavaScript</h3>
+        <p>
+          Catálogo dos meus exercícios de lógica de programação e JavaScript, organizado por
+          aula, com página própria pra cada exercício e navegação entre eles. Exercícios em sua maioria fornecidos pela Alura
+          e confecionados durante o curso. 
+        </p>
+        <a href="https://github.com/GiftforAisaka" target="_blank" rel="noopener" class="botao botao-fantasma">Ver no GitHub</a>
+      </article>
+      <article class="projeto-card projeto-card-vazio">
+        <p>Próximo projeto chegando em breve.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTATO
+============================================================ -->
+<section class="secao contato" id="contato">
+  <div class="wrap">
+    <h2>Vamos conversar?</h2>
+    <p>Aberta a uma primeira oportunidade em tecnologia — estágio, projeto ou trainee.</p>
+    <div class="contato-links">
+      <a href="mailto:tsbganda@yahoo.com.br">tsbganda@yahoo.com.br</a>
+      <a href="https://linkedin.com/in/thuanne-ganda-6b47a81a3" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/GiftforAisaka" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer class="rodape">
+  <p>Thuanne Ganda · Desenvolvimento Front End</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
