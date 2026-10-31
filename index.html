@@ -3,103 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thuanne Ganda — Transição para Tecnologia</title>
+<title>Thuanne Ganda — Portfólio</title>
 <meta name="description" content="Portfólio de Thuanne Ganda, em transição de carreira para tecnologia.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="faixa-babado"></div>
+
 <!-- ============================================================
-     CABEÇALHO + MENU
+     NAV
 ============================================================ -->
-<header class="topo">
-  <div class="wrap topo-wrap">
-    <a href="#inicio" class="marca">Thuanne<span>.dev</span></a>
-
-    <nav class="menu"> <!--Menu interativo que faz a página "descer" até o conteúdo selecionado-->
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#trajetoria">Trajetória</a></li>
-        <li class="tem-dropdown">
-          <a href="#projetos">Projetos</a>
-          <ul class="dropdown">
-            <li><a href="https://github.com/GiftforAisaka" target="_blank" rel="noopener">Aprendendo JS</a></li>
-            <li><a href="#projetos" class="em-breve">Construindo o próximo projeto...</a></li>
-          </ul>
-        </li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button> <!--Paletas de cores selecionaveis do site-->
-
-    <div class="paletas" role="group" aria-label="Trocar paleta de cores">
-      <button class="paleta-dot" data-tema="sakura" style="--dot:#c2185b" title="Sakura" aria-label="Paleta Sakura"></button>
-      <button class="paleta-dot" data-tema="lavanda" style="--dot:#7c4c99" title="Lavanda" aria-label="Paleta Lavanda"></button>
-      <button class="paleta-dot" data-tema="noite" style="--dot:#bd93f9" title="Noite" aria-label="Paleta Noite"></button>
-      <button class="paleta-dot" data-tema="matcha" style="--dot:#3d6b52" title="Matcha" aria-label="Paleta Matcha"></button>
-      <button class="paleta-dot" data-tema="sunset" style="--dot:#d1495b" title="Pôr do sol" aria-label="Paleta Pôr do sol"></button>
-    </div>
+<nav class="nav">
+  <div class="wrap nav-wrap">
+    <a href="#inicio" class="marca">🍓 thuanne<span>.dev</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">sobre</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#trajetoria">trajetória</a></li>
+      <li><a href="#projetos">projetos</a></li>
+      <li><a href="#contato">contato</a></li>
+    </ul>
   </div>
-</header>
+</nav>
 
 <!-- ============================================================
-     HERO - primeiro bloco visível da página
+     HERO
 ============================================================ -->
-<section class="hero" id="inicio">
+<header class="hero" id="inicio">
   <div class="wrap hero-grid">
     <div class="hero-texto">
-      <p class="hero-kicker">Análise e Desenvolvimento de Sistemas · em transição de carreira</p>
-      <h1>Trocando o plantão<br><em>pelo terminal</em></h1>
+      <p class="hero-kicker">✦ Cursando análise e desenvolvimento de sistemas</p><br>
+      <h1> Transformando a <em> complexidade </em><br> em <em> criatividade </em></h1>
       <p class="hero-lede">
-        Cursando Análise e Desenvolvimento de Sistemas, atualmente estudando primeiros passos em HTML, CSS, JavaScript e lógica de programação pela Alura. Apaixonada pelo aprendizado autônomo através de influencers de tecnologia e cursos extracuriculares, buscando sempre me atualizar. Entusiasta do uso da IA no dia dia, não de forma substitutiva, mas sim como ferramenta auxiliar de projetos e processos criativos, analisando cada etapa de forma crítica e atenciosa.
+      Cursando Análise e Desenvolvimento de Sistemas e estudando desenvolvimento Front-end com HTML, CSS, JavaScript 
+      Entusiasta do aprendizado autônomo através de influencers de tecnologia, buscando sempre me atualizar. Adepta ao uso da IA no dia a dia, não de forma substitutiva, mas sim como ferramenta auxiliar de projetos e processos criativos, analisando cada etapa de forma
+crítica e atenciosa.
       </p>
       <div class="hero-acoes">
-        <a href="#projetos" class="botao botao-principal">Ver projetos</a>
+        <a href="#projetos" class="botao botao-principal">Ver projetos 🍓</a>
         <a href="#contato" class="botao botao-fantasma">Falar comigo</a>
       </div>
     </div>
-
-    <div class="hero-sinal" aria-hidden="true"> <!--Linha animada com a tag html-->
-      <svg viewBox="0 0 420 160" xmlns="http://www.w3.org/2000/svg">
-        <path class="onda" d="M0,80 L60,80 Q80,60 100,80 L130,80 L142,95 L160,45 L178,115 L192,80 L240,80 Q270,55 300,80 L390,80"
-              fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <path class="colch" d="M320,55 L295,80 L320,105" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <path class="colch" d="M370,55 L395,80 L370,105" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <path class="colch" d="M345,112 L358,48" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <div class="hero-morango" aria-hidden="true">
+      <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+        <!-- folhinhas -->
+        <path d="M100,55 C80,20 40,25 30,45 C55,45 75,50 100,55 Z" fill="#8fbf7f"/>
+        <path d="M100,55 C120,20 160,25 170,45 C145,45 125,50 100,55 Z" fill="#a3d191"/>
+        <path d="M100,40 C95,15 105,10 100,0 C95,10 105,15 100,40 Z" fill="#8fbf7f"/>
+        <!-- corpo do morango -->
+        <path d="M100,55 C40,55 15,110 45,165 C65,200 135,200 155,165 C185,110 160,55 100,55 Z" fill="#f2537b"/>
+        <path d="M100,55 C40,55 15,110 45,165 C65,200 135,200 155,165 C185,110 160,55 100,55 Z" fill="url(#brilho)" opacity="0.5"/>
+        <defs>
+          <radialGradient id="brilho" cx="35%" cy="30%" r="60%">
+            <stop offset="0%" stop-color="#ffb6c9"/>
+            <stop offset="100%" stop-color="#f2537b" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- sementinhas -->
+        <g fill="#ffe29a">
+          <ellipse cx="75" cy="90" rx="4" ry="6" transform="rotate(-20 75 90)"/>
+          <ellipse cx="105" cy="85" rx="4" ry="6" transform="rotate(10 105 85)"/>
+          <ellipse cx="135" cy="95" rx="4" ry="6" transform="rotate(25 135 95)"/>
+          <ellipse cx="60" cy="125" rx="4" ry="6" transform="rotate(-10 60 125)"/>
+          <ellipse cx="95" cy="120" rx="4" ry="6" transform="rotate(5 95 120)"/>
+          <ellipse cx="130" cy="130" rx="4" ry="6" transform="rotate(15 130 130)"/>
+          <ellipse cx="75" cy="160" rx="4" ry="6" transform="rotate(-15 75 160)"/>
+          <ellipse cx="110" cy="165" rx="4" ry="6" transform="rotate(10 110 165)"/>
+        </g>
+        <!-- carinha fofa -->
+        <circle cx="82" cy="110" r="4" fill="#3a2230"/>
+        <circle cx="118" cy="110" r="4" fill="#3a2230"/>
+        <path d="M90,125 Q100,133 110,125" stroke="#3a2230" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <ellipse cx="68" cy="120" rx="7" ry="4" fill="#ff8fab" opacity="0.6"/>
+        <ellipse cx="132" cy="120" rx="7" ry="4" fill="#ff8fab" opacity="0.6"/>
       </svg>
     </div>
   </div>
-</section>
+</header>
 
 <!-- ============================================================
      SOBRE
 ============================================================ -->
 <section class="secao" id="sobre">
   <div class="wrap sobre-grid">
-    <div>
-      <h2>Sobre</h2>
+    <div class="card-fofo">
+      <h2>🍓 Sobre mim</h2>
       <p>
-        Três anos na rotina hospitalar me deram a capacidade de tomar decisões de forma rápida e consciente. 
-        Sou uma ótima comunicadora, sempre buscando passar informações de forma clara e adaptada a todos os públicos.
-        Capacidade de cumprir protocolos de forma inteligente e cuidadosa — hoje a serviço de uma nova área. Estou
-        construindo minha base técnica em HTML, CSS, JavaScript e lógica de programação,
-        cursando Análise e Desenvolvimento de Sistemas, com a mesma disciplina da minha primeira graduação.
+        Três anos na rotina hospitalar de emergência me deram a capacidade de tomar decisões
+        de forma rápida e consciente. Sou uma ótima comunicadora, sempre
+        buscando passar informações de forma clara e adaptada a todos os
+        públicos. Hoje aplico essa mesma disciplina e atenção a detalhes na
+        construção da minha base técnica em HTML, CSS, JavaScript e lógica de
+        programação, cursando Análise e Desenvolvimento de Sistemas na
+        Uninove.
       </p>
     </div>
-    <div class="ia-card">
-      <h3>Como uso IA no meu aprendizado</h3>
+    <div class="card-fofo card-ia">
+      <h2>🤖 Como uso IA no aprendizado</h2>
       <p>
-        Entusiasta do uso consciente de IA — não como substituta do raciocínio, mas como
-        ferramenta auxiliar de estudo. Introduzi o uso do Claude, ChatGPT e Gemini em minha rotina pra entender
-        o funcionamento de cada estrutura e linguagem, de forma alinhada aos estudos da graduação e 
-        cursos extracuriculares. Entendo a importância da IA como ferramenta auxiliar de mecanismos complexos
-        e como guia na construção dos projetos que gosto de criar. Mantenho meu próprio material de estudo atualizado com o que aprendo — sempre
-        analisando cada resposta de forma crítica antes de aplicar. 
+        Uso Claude, ChatGPT e Gemini como ferramentas de apoio nos estudos —
+        nunca como substitutas do raciocínio. Meu foco é sempre entender o
+        "como" e o "porquê" de cada coisa antes de aplicar, analisando cada
+        resposta de forma crítica. 100% das ideias criativas dos meus
+        projetos são minhas; a IA entra como guia, não como autora. Gosto de usar
+        a criatividade para reimaginar a estética e a funcionalidade de elementos
+        de nossa rotina. Por que não um pouco mais de brilho, cor e fantasia?
       </p>
     </div>
   </div>
@@ -108,9 +122,9 @@
 <!-- ============================================================
      SKILLS
 ============================================================ -->
-<section class="secao secao-alt" id="skills">
+<section class="secao secao-rosa" id="skills">
   <div class="wrap">
-    <h2>Skills</h2>
+    <h2 class="titulo-centro">🍓 Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">
         <h3>Em consolidação</h3>
@@ -130,7 +144,6 @@
           <span>Protocolos rigorosos</span>
           <span>Organização de eventos</span>
           <span>Criação de conteúdo</span>
-          <span>Treinamento de novas contratações</span>
         </div>
       </div>
       <div class="skill-card skill-card-ia">
@@ -139,8 +152,7 @@
           <span>Claude</span>
           <span>ChatGPT</span>
           <span>Gemini</span>
-          <span>Uso crítico &amp; e consciente</span>
-          <span>Implementação de projetos autorais</span>
+          <span>Uso crítico e consciente</span>
         </div>
       </div>
     </div>
@@ -152,7 +164,7 @@
 ============================================================ -->
 <section class="secao" id="trajetoria">
   <div class="wrap">
-    <h2>Trajetória - Como tudo começou?</h2>
+    <h2 class="titulo-centro">🍓 Trajetória</h2>
     <ol class="linha-tempo">
       <li>
         <span class="lt-data">2019 — 2021</span>
@@ -161,7 +173,7 @@
       </li>
       <li>
         <span class="lt-data">2022</span>
-        <h3>Iniciação científica · Financiamento Santander</h3>
+        <h3>Iniciação científica · Financiamento Santander Universidades</h3>
         <p>"Utilização do plasma rico em plaquetas no estímulo cicatricial: revisão de literatura."</p>
       </li>
       <li>
@@ -186,36 +198,46 @@
 <!-- ============================================================
      PROJETOS
 ============================================================ -->
-<section class="secao secao-alt" id="projetos">
+<section class="secao secao-rosa" id="projetos">
   <div class="wrap">
-    <h2>Projetos</h2>
+    <h2 class="titulo-centro">🍓 Projetos</h2>
     <div class="projetos-grid">
       <article class="projeto-card">
         <span class="projeto-status">Concluído</span>
         <h3>Exercícios de JavaScript</h3>
         <p>
-          Catálogo dos meus exercícios de lógica de programação e JavaScript, organizado por
-          aula, com página própria pra cada exercício e navegação entre eles. Exercícios em sua maioria fornecidos pela Alura
-          e confecionados durante o curso. 
+          Catálogo dos meus exercícios de lógica de programação e JavaScript,
+          organizado por aula, com página própria pra cada exercício.
         </p>
         <a href="https://github.com/GiftforAisaka" target="_blank" rel="noopener" class="botao botao-fantasma">Ver no GitHub</a>
       </article>
       <article class="projeto-card">
-        <span class="projeto-status">Em Construção</span>
+        <span class="projeto-status">Concluído</span>
         <h3>WishlistDev</h3>
-        <p>Um pequeno blog para compartilhar listas de leitura e resenhas de livros</p>
+        <p>Um pequeno blog para compartilhar listas de leitura e resenhas de livros.</p>
         <a href="https://github.com/GiftforAisaka" target="_blank" rel="noopener" class="botao botao-fantasma">Ver no GitHub</a>
+      </article>
+       <article class="projeto-card">
+        <span class="projeto-status">Concluído</span>
+        <h3>Convite de Aniversário</h3>
+        <p>Uma página simples com um convite de aniversário para estudos de Flexbox + Sistema de alerta de confirmação via JavaScript</p>
+        <a href="" target="_blank" rel="noopener" class="botao botao-fantasma">Ver no GitHub</a>
+      </article>
+      <article class="projeto-card">
+        <span class="projeto-status">Em construção</span>
+        <h3>MiuAI</h3>
+        <p>Projeto de extensão em empreendedorismo que cria um produto inteligente focado na saúde de felinos</p>
+        <a href="" target="_blank" rel="noopener" class="botao botao-fantasma">Ver no GitHub</a>
       </article>
     </div>
   </div>
 </section>
-
 <!-- ============================================================
      CONTATO
 ============================================================ -->
 <section class="secao contato" id="contato">
   <div class="wrap">
-    <h2>Vamos conversar?</h2>
+    <h2 class="titulo-centro">🍓 Vamos conversar?</h2>
     <p>Aberta a uma primeira oportunidade em tecnologia — estágio, projeto ou trainee.</p>
     <div class="contato-links">
       <a href="mailto:tsbganda@yahoo.com.br">tsbganda@yahoo.com.br</a>
@@ -226,7 +248,7 @@
 </section>
 
 <footer class="rodape">
-  <p>Thuanne Ganda · Desenvolvimento Front End</p>
+  <p>Thuanne Ganda · feito com 🍓 e muito HTML, CSS e JavaScript</p>
 </footer>
 
 <script src="script.js"></script>
